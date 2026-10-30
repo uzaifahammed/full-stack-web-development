@@ -18,7 +18,11 @@ full-stack-web-development/
 │
 ├── Assignments/
 │   ├── Assignment-1/
-│   │   └── Assignment-1.pdf
+│   │   ├── README.md
+│   │   ├── Assignment-1.pdf
+│   │   ├── 1-static-web-page.html
+│   │   ├── index.html
+│   │   └── style.css
 │   │
 │   └── Assignment-2-Individual-Project/
 │       ├── README.md
