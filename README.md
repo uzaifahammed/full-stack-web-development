@@ -11,7 +11,9 @@ full-stack-web-development/
 ├── .gitignore
 │
 ├── Observation/
+│   ├── README.md
 │   └── PDFs/
+│       └── Observation.pdf
 │
 ├── E-Record/
 │   ├── README.md
