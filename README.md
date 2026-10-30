@@ -27,12 +27,8 @@ full-stack-web-development/
 │   └── Assignment-2-Individual-Project/
 │       ├── README.md
 │       ├── screenshots/
-│       └── src/
-│           ├── index.html
-│           ├── style.css
-│           ├── App.jsx
-│           ├── components/
-│           └── data.json
+│       ├── client/          # React + Vite + React Router
+│       └── server/          # Node + Express + MongoDB (MERN)
 │
 └── Group-Project/
     ├── README.md

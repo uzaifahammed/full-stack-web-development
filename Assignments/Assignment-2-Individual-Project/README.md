@@ -1,126 +1,145 @@
-# PrepPulse — Campus Placement Preparation Portal
+# Placement Preparation Portal
 
-**Course:** Full Stack Web Development  
-**Assignment:** Assignment 2 — Individual Project  
+A full-stack MERN mini project for college placement preparation.
+
 **Student Name:** S.Uzaif Ahamed  
 **Registration Number:** A24126552178  
 
 ---
 
-## 📌 Project Overview
+## 📸 Screenshots
 
-**PrepPulse** is a full-featured, responsive, interactive **Campus Placement Preparation Portal** built with **React.js, HTML5, CSS3, and structured dummy JSON data**.
-
-It equips engineering and computer science students with a structured preparation path to crack technical assessments and interviews at top tier-1 product companies (Amazon, Microsoft, Google) and service leaders (TCS Digital, Infosys SP, Wipro Turbo, Accenture).
-
----
-
-## 📸 Screenshots (Actual Website Views)
-
-### 1. Dashboard & Placement Readiness Overview
+### 1. Student Dashboard & Placement Readiness Gauge
 ![Dashboard Overview](./screenshots/01-dashboard-overview.png)
 
-### 2. Target Company Recruitment Tracks
-![Company Tracks](./screenshots/02-company-recruitment-tracks.png)
-
-### 3. DSA Practice & Coding Drills with Filters & Solution Viewer
-![DSA Practice](./screenshots/03-dsa-coding-practice.png)
-
-### 4. Interactive Aptitude & Technical Quiz
+### 2. Aptitude & Technical Quiz with Scoring
 ![Aptitude Quiz](./screenshots/04-aptitude-quiz.png)
 
----
+### 3. Coding Practice Problems & Solution Viewer
+![Coding Practice](./screenshots/03-dsa-coding-practice.png)
 
-## 🚀 Key Features
-
-1. **📊 Interactive Dashboard & Readiness Meter:**
-   - Real-time placement readiness gauge computed dynamically from completed DSA challenges and checklist milestones.
-   - Quick statistics: Coding challenges, company roadmaps, core subjects, and practice tests.
-
-2. **🏢 Target Company Tracks:**
-   - In-depth recruitment workflows for **Amazon, Microsoft, Google, TCS Digital, Infosys, Wipro, and Accenture**.
-   - Details on CTC brackets, role definitions, round-by-round syllabus, and hot interview topics.
-   - Filter by Tier difficulty (`Hard` / `Medium`).
-
-3. **💻 Data Structures & Algorithms (DSA) Drills:**
-   - Curated list of high-frequency interview questions across Arrays, Strings, Linked Lists, Trees, Dynamic Programming, and Sorting/Searching.
-   - Real-time search by problem name or company tag.
-   - Difficulty pills (`Easy`, `Medium`, `Hard`) and Category filters.
-   - Interactive modal popup with **Problem Statement**, **Hint reveal toggle**, and **Optimal JavaScript solution code** with 1-click clipboard copy.
-   - Checkbox toggle to track solved problems (persisted across sessions via `localStorage`).
-
-4. **📝 Interactive Aptitude & Technical Quiz:**
-   - Timed multiple-choice questions covering Quantitative Aptitude, Logical Reasoning, and Technical fundamentals.
-   - Immediate score calculation, performance percentage, and detailed answer explanations for every question.
-   - Retake quiz functionality.
-
-5. **📚 Core CS Fundamentals Flashcards:**
-   - High-yield interview revision cards for:
-     - **DBMS**: ACID Properties, Normalization, SQL vs NoSQL, Indexing.
-     - **Operating Systems**: Processes vs Threads, Deadlock & Coffman conditions, Scheduling, Paging.
-     - **Computer Networks**: OSI vs TCP/IP, TCP vs UDP, 3-Way Handshake, DNS workflow.
-     - **OOPs**: 4 Pillars, Overloading vs Overriding, Abstract classes vs Interfaces, SOLID.
-
-6. **🎙️ HR & Behavioral Interview Preparation:**
-   - Common behavioral and fitment interview questions.
-   - Structured answering strategies utilizing the **STAR framework** (Situation, Task, Action, Result).
-   - Expandable model answers.
-
-7. **✅ Placement Preparation Checklist:**
-   - Milestone checklist covering resume ATS optimization, coding targets, project deployment, and profile tuning.
-   - Dynamically impacts the dashboard readiness score.
+### 4. Company Recruitment Tracks
+![Company Tracks](./screenshots/02-company-recruitment-tracks.png)
 
 ---
 
-## 🛠️ Technology Stack
-
-- **Frontend Library:** React.js (Hooks: `useState`, `useEffect`)
-- **Structure:** Semantic HTML5
-- **Styling:** Custom Vanilla CSS3 Design System (CSS Custom Properties, Flexbox, CSS Grid, Transitions)
-- **Data Source:** Structured Dummy JSON dataset (`data.json`)
-- **Local Persistence:** Browser `localStorage` for completed problems and checklist states
+## Features
+- **JWT-based registration and login:** Secure student authentication using bcryptjs and JSON Web Tokens.
+- **Student dashboard with progress statistics:** Live placement readiness score, problems solved counter, and recent quiz attempts.
+- **Aptitude quiz with scoring and saved attempts:** Interactive assessment engine with category filtering, timers, immediate scoring, and question explanations.
+- **Interview question bank by category:** High-frequency HR behavioral (STAR method) and technical interview questions (DBMS, OS, CN, OOPs).
+- **Coding practice problem list with difficulty filters:** Algorithmic challenges with tags, difficulty pills, hints, and JavaScript solution code.
+- **Profile page and progress history:** View academic details, recent quiz performances, and solved challenge milestones.
+- **MongoDB persistence with demo seed data:** Mongoose models with automated seed script (`npm run seed`) for quick setup.
+- **Responsive UI:** Clean, modern developer interface supporting desktop, tablet, and mobile displays.
 
 ---
 
-## 📁 Component Hierarchy & Directory Structure
+## Tech stack
+- **Frontend:** React + Vite + React Router DOM
+- **Backend:** Node.js + Express
+- **Database:** MongoDB + Mongoose
+- **Authentication:** bcryptjs + JSON Web Tokens (JWT)
 
+---
+
+## Prerequisites
+- Node.js 18+
+- MongoDB Community Server or a MongoDB Atlas connection URI
+
+---
+
+## Run locally
+
+### 1. Backend
+```bash
+cd server
+copy .env.example .env
+npm install
+npm run seed
+npm run dev
+```
+Set `MONGO_URI` and `JWT_SECRET` in `server/.env` before starting.
+
+### 2. Frontend
+In a second terminal:
+```bash
+cd client
+npm install
+npm run dev
+```
+Open the URL shown by Vite (usually `http://localhost:5173`).
+
+The frontend expects the API at `http://localhost:5000/api`. Set `VITE_API_URL` in `client/.env` if needed.
+
+---
+
+## Demo workflow
+1. Register a new account (or login with prefilled demo credentials).
+2. Open **Aptitude** and complete an assessment quiz.
+3. View your updated score and readiness percentage on the **Dashboard**.
+4. Browse **Interview Questions** and solve problems in **Coding Practice**.
+5. Check your progress and attempt records in **Profile**.
+
+---
+
+## Project Structure
 ```text
 Assignment-2-Individual-Project/
-├── README.md                               # Project documentation & screenshots
-├── package.json                            # Scripts & metadata
-├── screenshots/                            # Project submission screenshots
-│   ├── 01-dashboard-overview.jpg
-│   └── 02-dsa-coding-practice.jpg
-└── src/
-    ├── index.html                          # Entry point supporting zero-dependency browser execution
-    ├── style.css                           # Complete responsive CSS design system
-    ├── data.json                           # Comprehensive placement dummy dataset
-    ├── App.jsx                             # Root React component managing tabs & global state
-    └── components/
-        ├── Navbar.jsx                      # Navigation bar & student profile badge
-        ├── Dashboard.jsx                   # Hero banner, stats & quick access cards
-        ├── CompanyTracks.jsx               # Company profiles & round timelines
-        ├── DsaPractice.jsx                 # DSA problem list with search & filter
-        ├── QuestionModal.jsx               # Solution viewer with code copy & hint
-        ├── AptitudeQuiz.jsx                # Interactive quiz engine & score review
-        ├── CoreSubjects.jsx                # Color-coded CS revision cards
-        ├── InterviewGuide.jsx              # Behavioral Q&A with STAR strategies
-        └── ChecklistTracker.jsx            # Dynamic placement milestone checklist
+├── README.md
+├── screenshots/
+│   ├── 01-dashboard-overview.png
+│   ├── 02-company-recruitment-tracks.png
+│   ├── 03-dsa-coding-practice.png
+│   └── 04-aptitude-quiz.png
+├── server/
+│   ├── package.json
+│   ├── .env.example
+│   ├── server.js
+│   ├── seed.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── QuizQuestion.js
+│   │   ├── QuizAttempt.js
+│   │   ├── InterviewQuestion.js
+│   │   └── CodingProblem.js
+│   └── routes/
+│       ├── auth.js
+│       ├── user.js
+│       ├── quiz.js
+│       ├── coding.js
+│       └── questions.js
+└── client/
+    ├── package.json
+    ├── vite.config.js
+    ├── index.html
+    ├── .env.example
+    └── src/
+        ├── main.jsx
+        ├── App.jsx
+        ├── index.css
+        ├── context/
+        │   └── AuthContext.jsx
+        ├── components/
+        │   ├── Navbar.jsx
+        │   └── ProtectedRoute.jsx
+        ├── data/
+        │   └── mockData.js
+        └── pages/
+            ├── Dashboard.jsx
+            ├── Login.jsx
+            ├── Register.jsx
+            ├── Aptitude.jsx
+            ├── Coding.jsx
+            ├── Interview.jsx
+            └── Profile.jsx
 ```
 
 ---
 
-## ⚡ How to Run the Project
-
-### Option 1: Direct Browser Launch (Zero-Setup)
-Simply open [`src/index.html`](./src/index.html) directly in any modern web browser (Google Chrome, Microsoft Edge, Firefox, or Safari). It automatically loads React and Babel Standalone with the embedded data.
-
-### Option 2: Using Node & npm
-```bash
-# Navigate to the project directory
-cd Assignments/Assignment-2-Individual-Project
-
-# Start local preview server
-npm start
-```
-Open `http://localhost:3000` or the displayed local port in your browser.
+## Security notes
+- Never commit your real `.env` files or secrets.
+- `.env.example` contains placeholders only.
+- This is a college mini-project starter. Before public production use, add email verification, password reset, rate limiting, stronger input validation, and deployment-specific security configuration.
