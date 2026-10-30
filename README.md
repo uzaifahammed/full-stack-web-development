@@ -36,9 +36,9 @@ full-stack-web-development/
 │
 └── Group-Project/
     ├── README.md
-    ├── screenshots/
-    ├── client/          # React
-    └── server/          # Node + Express + MongoDB 
+    ├── screenshots/     # group_project_screenshots.pdf & page PNGs
+    ├── client/          # React (TravelMate)
+    └── server/          # Backend notes 
 ```
 
 ## 📚 Contents
