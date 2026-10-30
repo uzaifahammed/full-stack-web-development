@@ -34,7 +34,9 @@ export default function Footer() {
           <h5>Team Members</h5>
           <ul>
             <li><span>Sari Dharani (A24126552176)</span></li>
+            <li><span>S.Siddhart (A24126552177)</span></li>
             <li><span>S.Uzaif Ahamed (A24126552178)</span></li>
+            <li><span>S.Vamsi (A24126552179)</span></li>
           </ul>
         </div>
       </div>

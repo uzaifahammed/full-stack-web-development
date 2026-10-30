@@ -7,8 +7,10 @@ This is the frontend single-page web application for **TravelMate**, built with 
 
 ## 👥 Student & Team Info
 - **Team Members:**
-  - S.Uzaif Ahamed (`A24126552178`) - `shaikmullauzaifahamed.24.csm@anits.edu.in`
   - Sari Dharani (`A24126552176`)
+  - S.Siddhart (`A24126552177`)
+  - S.Uzaif Ahamed (`A24126552178`) - `shaikmullauzaifahamed.24.csm@anits.edu.in`
+  - S.Vamsi (`A24126552179`)
 - **Institution:** Anil Neerukonda Institute of Technology & Sciences (ANITS)
 - **Department:** Computer Science & Engineering (AI & ML) - Section C (2024-2028)
 

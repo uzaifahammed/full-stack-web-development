@@ -104,9 +104,14 @@ export default function Profile() {
             </div>
             <div>
               <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-muted)', display: 'block', marginBottom: '4px' }}>
-                Team Partner
+                Team Members
               </span>
-              <strong style={{ fontSize: '1rem' }}>Sari Dharani (A24126552176)</strong>
+              <div style={{ fontSize: '0.9rem', lineHeight: '1.6', marginTop: '2px' }}>
+                <div>• <strong>Sari Dharani</strong> (A24126552176)</div>
+                <div>• <strong>S.Siddhart</strong> (A24126552177)</div>
+                <div>• <strong>S.Uzaif Ahamed</strong> (A24126552178)</div>
+                <div>• <strong>S.Vamsi</strong> (A24126552179)</div>
+              </div>
             </div>
           </div>
         </div>

@@ -8,7 +8,9 @@ A responsive React travel web app built with Vite, React Router, reusable compon
 | Name | Roll No |
 |---|---|
 | Sari Dharani | A24126552176 |
+| S.Siddhart | A24126552177 |
 | S.Uzaif Ahamed | A24126552178 |
+| S.Vamsi | A24126552179 |
 
 ---
 

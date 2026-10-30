@@ -24,7 +24,9 @@ For multi-device synchronization and collaborative group travel planning, an Exp
 
 ## 👥 Student & Team Info
 - **Team Members:**
-  - S.Uzaif Ahamed (`A24126552178`) - `shaikmullauzaifahamed.24.csm@anits.edu.in`
   - Sari Dharani (`A24126552176`)
+  - S.Siddhart (`A24126552177`)
+  - S.Uzaif Ahamed (`A24126552178`) - `shaikmullauzaifahamed.24.csm@anits.edu.in`
+  - S.Vamsi (`A24126552179`)
 - **Institution:** Anil Neerukonda Institute of Technology & Sciences (ANITS)
 - **Course:** Full Stack Web Development Lab (2024–2028)
