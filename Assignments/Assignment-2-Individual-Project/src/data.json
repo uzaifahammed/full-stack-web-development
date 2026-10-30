@@ -1,4 +1,440 @@
 {
-  "title": "Assignment 2 - Individual Project",
-  "items": []
+  "portalInfo": {
+    "title": "PrepPulse",
+    "tagline": "Campus Placement Preparation Portal",
+    "studentName": "S.Uzaif Ahamed",
+    "studentId": "A24126552178",
+    "academicYear": "2025-2026"
+  },
+  "stats": {
+    "totalProblems": 12,
+    "companyTracks": 7,
+    "coreSubjects": 4,
+    "aptitudeQuestions": 8
+  },
+  "companies": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "badge": "Product Tier-1",
+      "package": "32 - 45 LPA",
+      "role": "Software Development Engineer (SDE-1)",
+      "difficulty": "Hard",
+      "rounds": [
+        { "round": 1, "name": "Online Assessment", "detail": "2 DSA coding questions + Work Style Assessment (Leadership Principles)." },
+        { "round": 2, "name": "Technical Round 1", "detail": "Data structures, Trees, Graph algorithms, and complexity analysis." },
+        { "round": 3, "name": "Technical Round 2", "detail": "Dynamic Programming, System Design basics, OOP problem modeling." },
+        { "round": 4, "name": "Bar Raiser / HR", "detail": "Deep dive into Amazon's 16 Leadership Principles using STAR format." }
+      ],
+      "hotTopics": ["Dynamic Programming", "Graphs & Trees", "OOPs Design", "Leadership Principles"]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "badge": "Product Tier-1",
+      "package": "28 - 44 LPA",
+      "role": "Software Engineer",
+      "difficulty": "Hard",
+      "rounds": [
+        { "round": 1, "name": "Codility Online Test", "detail": "3 algorithm challenges focusing on edge cases and optimal runtime." },
+        { "round": 2, "name": "Technical Round 1", "detail": "Arrays, Strings, Linked Lists, recursion and space complexity." },
+        { "round": 3, "name": "Technical Round 2", "detail": "Trees, BST, System Architecture, and Low-Level Object Design." },
+        { "round": 4, "name": "AA / Fitment Round", "detail": "Core CS fundamentals (OS, Concurrency), past projects, and culture fit." }
+      ],
+      "hotTopics": ["Binary Trees", "Concurrency & OS", "System Design", "String Manipulation"]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "badge": "Product Tier-1",
+      "package": "35 - 55 LPA",
+      "role": "Software Engineer (L3)",
+      "difficulty": "Hard",
+      "rounds": [
+        { "round": 1, "name": "Screening Assessment", "detail": "Google Online Challenge (2 algorithmic problems in 60 mins)." },
+        { "round": 2, "name": "Technical Interview 1", "detail": "Advanced algorithms, Graphs, Trie, or Segment Trees." },
+        { "round": 3, "name": "Technical Interview 2", "detail": "Complex DP, Greedy approaches, and mathematical optimization." },
+        { "round": 4, "name": "Googleyness & Leadership", "detail": "Collaborative problem solving, ethics, ambiguity handling." }
+      ],
+      "hotTopics": ["Graph Theory", "Advanced DP", "Trie & Hashing", "Googleyness"]
+    },
+    {
+      "id": "tcs-digital",
+      "name": "TCS Digital / Prime",
+      "badge": "Service Leader",
+      "package": "7.5 - 9.0 LPA",
+      "role": "System Engineer / Prime Developer",
+      "difficulty": "Medium",
+      "rounds": [
+        { "round": 1, "name": "NQT Cognitive & Coding", "detail": "Advanced Quantitative Aptitude + 2 DSA coding challenges." },
+        { "round": 2, "name": "Technical Interview", "detail": "Java/Python fundamentals, DBMS SQL queries, Web tech basics." },
+        { "round": 3, "name": "Managerial & HR", "detail": "Resume projects, situational problem solving, willingness to relocate." }
+      ],
+      "hotTopics": ["Aptitude & Speed", "SQL Queries", "OOPs in Java/Python", "Data Structures"]
+    },
+    {
+      "id": "infosys-sp",
+      "name": "Infosys Specialist Programmer",
+      "badge": "Product/Service",
+      "package": "8.0 - 9.5 LPA",
+      "role": "Specialist Programmer (SP)",
+      "difficulty": "Medium",
+      "rounds": [
+        { "round": 1, "name": "InfyTQ / HackWithInfy", "detail": "3 intense competitive programming problems." },
+        { "round": 2, "name": "Technical Interview", "detail": "Live coding, algorithm optimization, and DBMS concepts." },
+        { "round": 3, "name": "HR Interview", "detail": "Behavioral assessment, communication skills, career aspirations." }
+      ],
+      "hotTopics": ["Dynamic Programming", "Greedy Algorithms", "DBMS Normalization", "Problem Solving"]
+    },
+    {
+      "id": "wipro-turbo",
+      "name": "Wipro Turbo",
+      "badge": "Service Leader",
+      "package": "6.5 - 8.5 LPA",
+      "role": "Project Engineer - Turbo",
+      "difficulty": "Medium",
+      "rounds": [
+        { "round": 1, "name": "National Talent Hunt", "detail": "Aptitude, Verbal Ability, and 2 medium coding questions." },
+        { "round": 2, "name": "Technical Interview", "detail": "C/C++/Java basics, Data Structures, pointers, and web concepts." },
+        { "round": 3, "name": "HR Discussion", "detail": "Background verification, communication, and shift flexibility." }
+      ],
+      "hotTopics": ["Aptitude", "C/C++ Fundamentals", "Sorting Algorithms", "Pointers"]
+    },
+    {
+      "id": "accenture-aase",
+      "name": "Accenture (AASE)",
+      "badge": "Consulting Tech",
+      "package": "6.5 - 8.0 LPA",
+      "role": "Advanced Associate Software Engineer",
+      "difficulty": "Medium",
+      "rounds": [
+        { "round": 1, "name": "Cognitive & Technical Assessment", "detail": "Reasoning, English, Pseudocode, Common Applications." },
+        { "round": 2, "name": "Coding Assessment", "detail": "2 problem solving tasks in C/C++/Java/Python." },
+        { "round": 3, "name": "Virtual Interview", "detail": "Projects walkthrough, core CS concepts, team collaboration." }
+      ],
+      "hotTopics": ["Pseudocode Analysis", "Cloud Basics", "Strings & Arrays", "Project Architecture"]
+    }
+  ],
+  "dsaQuestions": [
+    {
+      "id": 1,
+      "title": "Two Sum",
+      "category": "Arrays",
+      "difficulty": "Easy",
+      "companies": ["Amazon", "Google", "Microsoft"],
+      "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume each input has exactly one solution.",
+      "hint": "Use a Hash Map to store previously visited elements and their indices for O(n) lookup.",
+      "solutionCode": "function twoSum(nums, target) {\n  const map = new Map();\n  for (let i = 0; i < nums.length; i++) {\n    const complement = target - nums[i];\n    if (map.has(complement)) {\n      return [map.get(complement), i];\n    }\n    map.set(nums[i], i);\n  }\n  return [];\n}"
+    },
+    {
+      "id": 2,
+      "title": "Maximum Subarray (Kadane's Algorithm)",
+      "category": "Arrays",
+      "difficulty": "Medium",
+      "companies": ["Amazon", "Microsoft", "TCS Digital"],
+      "description": "Given an integer array nums, find the subarray with the largest sum, and return its sum.",
+      "hint": "Maintain currentSum and maxSum. If currentSum drops below 0, reset it to 0.",
+      "solutionCode": "function maxSubArray(nums) {\n  let currentSum = 0;\n  let maxSum = nums[0];\n  for (const num of nums) {\n    currentSum += num;\n    maxSum = Math.max(maxSum, currentSum);\n    if (currentSum < 0) currentSum = 0;\n  }\n  return maxSum;\n}"
+    },
+    {
+      "id": 3,
+      "title": "Best Time to Buy and Sell Stock",
+      "category": "Arrays",
+      "difficulty": "Easy",
+      "companies": ["Amazon", "Microsoft", "Infosys"],
+      "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day. Maximize your profit by choosing a single day to buy and a different day in the future to sell.",
+      "hint": "Track minPrice seen so far and calculate max profit for each day.",
+      "solutionCode": "function maxProfit(prices) {\n  let minPrice = Infinity;\n  let maxProfit = 0;\n  for (let price of prices) {\n    if (price < minPrice) minPrice = price;\n    else maxProfit = Math.max(maxProfit, price - minPrice);\n  }\n  return maxProfit;\n}"
+    },
+    {
+      "id": 4,
+      "title": "Longest Substring Without Repeating Characters",
+      "category": "Strings",
+      "difficulty": "Medium",
+      "companies": ["Amazon", "Google", "Microsoft"],
+      "description": "Given a string s, find the length of the longest substring without repeating characters.",
+      "hint": "Use Sliding Window technique with a Set or Map storing the latest character indices.",
+      "solutionCode": "function lengthOfLongestSubstring(s) {\n  let set = new Set();\n  let left = 0, maxLength = 0;\n  for (let right = 0; right < s.length; right++) {\n    while (set.has(s[right])) {\n      set.delete(s[left]);\n      left++;\n    }\n    set.add(s[right]);\n    maxLength = Math.max(maxLength, right - left + 1);\n  }\n  return maxLength;\n}"
+    },
+    {
+      "id": 5,
+      "title": "Valid Palindrome",
+      "category": "Strings",
+      "difficulty": "Easy",
+      "companies": ["Microsoft", "Wipro", "Accenture"],
+      "description": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward.",
+      "hint": "Clean non-alphanumeric chars with regex, then use two pointers moving inwards.",
+      "solutionCode": "function isPalindrome(s) {\n  const clean = s.toLowerCase().replace(/[^a-z0-9]/g, '');\n  let l = 0, r = clean.length - 1;\n  while (l < r) {\n    if (clean[l] !== clean[r]) return false;\n    l++; r--;\n  }\n  return true;\n}"
+    },
+    {
+      "id": 6,
+      "title": "Reverse a Linked List",
+      "category": "Linked Lists",
+      "difficulty": "Easy",
+      "companies": ["Amazon", "Microsoft", "TCS Digital"],
+      "description": "Given the head of a singly linked list, reverse the list, and return the reversed list.",
+      "hint": "Keep three pointers: prev = null, curr = head, and nextNode.",
+      "solutionCode": "function reverseList(head) {\n  let prev = null;\n  let curr = head;\n  while (curr !== null) {\n    let next = curr.next;\n    curr.next = prev;\n    prev = curr;\n    curr = next;\n  }\n  return prev;\n}"
+    },
+    {
+      "id": 7,
+      "title": "Detect Cycle in Linked List",
+      "category": "Linked Lists",
+      "difficulty": "Easy",
+      "companies": ["Amazon", "Google", "Infosys"],
+      "description": "Given head, the head of a linked list, determine if the linked list has a cycle in it using Floyd's Tortoise and Hare algorithm.",
+      "hint": "Fast pointer moves 2 steps, slow pointer moves 1 step. If they meet, a cycle exists.",
+      "solutionCode": "function hasCycle(head) {\n  let slow = head, fast = head;\n  while (fast !== null && fast.next !== null) {\n    slow = slow.next;\n    fast = fast.next.next;\n    if (slow === fast) return true;\n  }\n  return false;\n}"
+    },
+    {
+      "id": 8,
+      "title": "Binary Tree Level Order Traversal",
+      "category": "Trees",
+      "difficulty": "Medium",
+      "companies": ["Amazon", "Microsoft", "Google"],
+      "description": "Given the root of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).",
+      "hint": "Use Breadth-First Search (BFS) with a queue. Process level size in each iteration.",
+      "solutionCode": "function levelOrder(root) {\n  if (!root) return [];\n  const result = [];\n  const queue = [root];\n  while (queue.length > 0) {\n    const levelSize = queue.length;\n    const currentLevel = [];\n    for (let i = 0; i < levelSize; i++) {\n      const node = queue.shift();\n      currentLevel.push(node.val);\n      if (node.left) queue.push(node.left);\n      if (node.right) queue.push(node.right);\n    }\n    result.push(currentLevel);\n  }\n  return result;\n}"
+    },
+    {
+      "id": 9,
+      "title": "Invert Binary Tree",
+      "category": "Trees",
+      "difficulty": "Easy",
+      "companies": ["Google", "Amazon"],
+      "description": "Given the root of a binary tree, invert the tree (mirror image), and return its root.",
+      "hint": "Recursively swap left and right subtrees for each node.",
+      "solutionCode": "function invertTree(root) {\n  if (!root) return null;\n  const temp = root.left;\n  root.left = invertTree(root.right);\n  root.right = invertTree(temp);\n  return root;\n}"
+    },
+    {
+      "id": 10,
+      "title": "Climbing Stairs",
+      "category": "Dynamic Programming",
+      "difficulty": "Easy",
+      "companies": ["Amazon", "Microsoft", "Accenture"],
+      "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+      "hint": "Ways(n) = Ways(n-1) + Ways(n-2). This is equivalent to Fibonacci numbers.",
+      "solutionCode": "function climbStairs(n) {\n  if (n <= 2) return n;\n  let prev2 = 1, prev1 = 2;\n  for (let i = 3; i <= n; i++) {\n    let curr = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = curr;\n  }\n  return prev1;\n}"
+    },
+    {
+      "id": 11,
+      "title": "0/1 Knapsack Problem",
+      "category": "Dynamic Programming",
+      "difficulty": "Medium",
+      "companies": ["Google", "Amazon", "Infosys"],
+      "description": "Given weights and values of n items, put these items in a knapsack of capacity W to get maximum total value in the knapsack.",
+      "hint": "dp[i][w] = max(val[i-1] + dp[i-1][w-wt[i-1]], dp[i-1][w]).",
+      "solutionCode": "function knapsack(W, wt, val, n) {\n  const dp = Array.from({ length: n + 1 }, () => Array(W + 1).fill(0));\n  for (let i = 1; i <= n; i++) {\n    for (let w = 1; w <= W; w++) {\n      if (wt[i - 1] <= w) {\n        dp[i][w] = Math.max(val[i - 1] + dp[i - 1][w - wt[i - 1]], dp[i - 1][w]);\n      } else {\n        dp[i][w] = dp[i - 1][w];\n      }\n    }\n  }\n  return dp[n][W];\n}"
+    },
+    {
+      "id": 12,
+      "title": "Search in Rotated Sorted Array",
+      "category": "Sorting & Searching",
+      "difficulty": "Medium",
+      "companies": ["Microsoft", "Google", "TCS Digital"],
+      "description": "Given the array nums sorted in ascending order (with distinct values) and rotated at an unknown pivot, return the index of target, or -1 if not found in O(log n).",
+      "hint": "In any rotated sorted array, at least one half (left or right) is strictly sorted. Check if target lies within the sorted half.",
+      "solutionCode": "function search(nums, target) {\n  let low = 0, high = nums.length - 1;\n  while (low <= high) {\n    const mid = Math.floor((low + high) / 2);\n    if (nums[mid] === target) return mid;\n    if (nums[low] <= nums[mid]) {\n      if (nums[low] <= target && target < nums[mid]) high = mid - 1;\n      else low = mid + 1;\n    } else {\n      if (nums[mid] < target && target <= nums[high]) low = mid + 1;\n      else high = mid - 1;\n    }\n  }\n  return -1;\n}"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": 1,
+      "category": "Quantitative Aptitude",
+      "question": "A train running at 54 km/hr takes 20 seconds to cross a platform 150 meters long. What is the length of the train?",
+      "options": ["100 meters", "150 meters", "200 meters", "250 meters"],
+      "correctIndex": 1,
+      "explanation": "Speed = 54 * (5/18) = 15 m/s. Total distance in 20s = 15 * 20 = 300m. Train length = Total distance - Platform length = 300 - 150 = 150m."
+    },
+    {
+      "id": 2,
+      "category": "Logical Reasoning",
+      "question": "If 'CODING' is coded as 'DPEJOH', what is the code for 'CAMPUS'?",
+      "options": ["DBNQVT", "EBNQVT", "DANRVT", "DBMRVT"],
+      "correctIndex": 0,
+      "explanation": "Each letter is shifted by +1: C->D, A->B, M->N, P->Q, U->V, S->T. Result = DBNQVT."
+    },
+    {
+      "id": 3,
+      "category": "Quantitative Aptitude",
+      "question": "A can finish a work in 12 days and B can finish it in 24 days. Working together, in how many days can they finish the work?",
+      "options": ["6 days", "8 days", "10 days", "16 days"],
+      "correctIndex": 1,
+      "explanation": "1/A + 1/B = 1/12 + 1/24 = 3/24 = 1/8. Together they finish the work in 8 days."
+    },
+    {
+      "id": 4,
+      "category": "Technical (DBMS)",
+      "question": "Which normal form removes transitive dependencies?",
+      "options": ["1NF", "2NF", "3NF", "BCNF"],
+      "correctIndex": 2,
+      "explanation": "Third Normal Form (3NF) ensures the table is in 2NF and no non-prime attribute is transitively dependent on the primary key."
+    },
+    {
+      "id": 5,
+      "category": "Technical (OS)",
+      "question": "Which of the following is NOT one of the Coffman conditions for a deadlock to occur?",
+      "options": ["Mutual Exclusion", "Hold and Wait", "Preemption allowed", "Circular Wait"],
+      "correctIndex": 2,
+      "explanation": "No preemption is a required Coffman condition. If preemption is allowed, deadlock cannot occur."
+    },
+    {
+      "id": 6,
+      "category": "Technical (Computer Networks)",
+      "question": "Which protocol works at the Transport layer and provides reliable, connection-oriented data transfer?",
+      "options": ["UDP", "IP", "TCP", "ICMP"],
+      "correctIndex": 2,
+      "explanation": "TCP (Transmission Control Protocol) is connection-oriented, guarantees delivery, error checking, and ordering at Layer 4."
+    },
+    {
+      "id": 7,
+      "category": "Technical (OOPs)",
+      "question": "Method overloading is an example of which type of polymorphism?",
+      "options": ["Compile-time (Static) Polymorphism", "Run-time (Dynamic) Polymorphism", "Ad-hoc Encapsulation", "Abstract Overriding"],
+      "correctIndex": 0,
+      "explanation": "Method overloading is resolved at compile time based on method signatures, hence Compile-time polymorphism."
+    },
+    {
+      "id": 8,
+      "category": "Logical Reasoning",
+      "question": "Pointing to a photograph of a boy, Suresh said, 'He is the son of the only son of my mother.' How is Suresh related to that boy?",
+      "options": ["Brother", "Uncle", "Father", "Cousin"],
+      "correctIndex": 2,
+      "explanation": "The 'only son of Suresh's mother' is Suresh himself. Therefore, the boy is Suresh's son, making Suresh the Father."
+    }
+  ],
+  "coreSubjects": [
+    {
+      "id": "dbms",
+      "name": "Database Management Systems (DBMS)",
+      "color": "#3b82f6",
+      "concepts": [
+        {
+          "title": "ACID Properties",
+          "summary": "Atomicity (all or nothing), Consistency (preserves invariants), Isolation (concurrent transactions don't interfere), Durability (committed changes persist even after crashes)."
+        },
+        {
+          "title": "Normalization (1NF, 2NF, 3NF, BCNF)",
+          "summary": "1NF: Atomic values; 2NF: No partial dependency on composite key; 3NF: No transitive dependency; BCNF: For every functional dependency X -> Y, X must be a super key."
+        },
+        {
+          "title": "SQL vs NoSQL Databases",
+          "summary": "SQL (PostgreSQL, MySQL) are relational, table-based, strict schema, ACID-compliant. NoSQL (MongoDB, Redis) are non-relational, document/key-value based, horizontally scalable."
+        },
+        {
+          "title": "Indexing (B-Trees / B+ Trees)",
+          "summary": "Data structures that improve speed of data retrieval operations on a table at the cost of additional writes and storage space. B+ Trees keep all data in leaf nodes."
+        }
+      ]
+    },
+    {
+      "id": "os",
+      "name": "Operating Systems (OS)",
+      "color": "#10b981",
+      "concepts": [
+        {
+          "title": "Process vs Thread",
+          "summary": "A process is an execution instance with its own address space, memory, and file handles. A thread is a lightweight execution unit inside a process sharing the same address space."
+        },
+        {
+          "title": "Deadlock & Coffman Conditions",
+          "summary": "A state where a set of processes are blocked waiting for resources held by each other. 4 Conditions: Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait."
+        },
+        {
+          "title": "CPU Scheduling Algorithms",
+          "summary": "FCFS (First Come First Serve), SJF (Shortest Job First), Round Robin (time quantum-based, fair for timesharing), Priority Scheduling."
+        },
+        {
+          "title": "Virtual Memory & Paging",
+          "summary": "Technique allowing execution of processes not completely in physical memory. Divides logical memory into Pages and physical memory into Frames with a Page Table mapping."
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "name": "Computer Networks (CN)",
+      "color": "#8b5cf6",
+      "concepts": [
+        {
+          "title": "OSI 7 Layers vs TCP/IP 4 Layers",
+          "summary": "OSI: Physical, Data Link, Network, Transport, Session, Presentation, Application. TCP/IP: Network Interface, Internet, Transport, Application."
+        },
+        {
+          "title": "TCP vs UDP",
+          "summary": "TCP: Connection-oriented, reliable, ordering guaranteed, flow & congestion control (HTTP, Email). UDP: Connectionless, fast, no delivery guarantees (DNS, Video Streaming, Gaming)."
+        },
+        {
+          "title": "TCP 3-Way Handshake",
+          "summary": "Client sends SYN -> Server responds with SYN-ACK -> Client replies with ACK. Establishes sequence numbers and connection state."
+        },
+        {
+          "title": "DNS & What Happens When You Type a URL",
+          "summary": "Browser cache check -> OS cache -> Resolving Name Server -> Root -> TLD -> Authoritative NS -> IP returned -> TCP 3-way handshake -> TLS handshake -> HTTP GET -> HTML rendered."
+        }
+      ]
+    },
+    {
+      "id": "oops",
+      "name": "Object-Oriented Programming (OOP)",
+      "color": "#f59e0b",
+      "concepts": [
+        {
+          "title": "4 Pillars of OOP",
+          "summary": "Encapsulation (bundling data and methods, hiding internals), Abstraction (hiding implementation details), Inheritance (reusing code), Polymorphism (many forms)."
+        },
+        {
+          "title": "Overloading vs Overriding",
+          "summary": "Overloading: Same method name with different parameters in same class (compile-time). Overriding: Subclass provides specific implementation of parent method (run-time)."
+        },
+        {
+          "title": "Abstract Class vs Interface",
+          "summary": "An abstract class can have state, constructors, and concrete methods. An interface specifies a contract (behavior) that implementing classes must satisfy."
+        },
+        {
+          "title": "SOLID Principles",
+          "summary": "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion."
+        }
+      ]
+    }
+  ],
+  "interviewQuestions": [
+    {
+      "id": 1,
+      "category": "HR & Behavioral",
+      "question": "Tell me about yourself and your journey in Computer Science.",
+      "strategy": "Structure with Past -> Present -> Future: Introduce education background, highlight top technical skills/projects, and explain why this specific company aligns with your career goals.",
+      "sampleAnswer": "I am a final-year student specializing in Computer Science. Over the last three years, I've focused on full-stack web development and core algorithmic problem solving. Recently, I built a Campus Placement Preparation Portal using React, which streamlined interview tracks and DSA drills for over 200 classmates. I am excited to bring my problem-solving mindset and full-stack capabilities to an innovative engineering team like yours."
+    },
+    {
+      "id": 2,
+      "category": "Behavioral (STAR Method)",
+      "question": "Describe a challenging situation in a team project and how you resolved it.",
+      "strategy": "Situation (Context), Task (Challenge), Action (What YOU did concretely), Result (Measurable outcome).",
+      "sampleAnswer": "Situation: In our group semester project, we faced a major API mismatch 48 hours before submission between our React client and Express backend. Task: I needed to reconcile the schemas without delaying the milestone. Action: I organized a rapid 2-hour sync, drafted a clear JSON contract specification, and wrote adapter middlewares. Result: We integrated successfully ahead of schedule and secured the highest grade in the class."
+    },
+    {
+      "id": 3,
+      "category": "HR & Culture",
+      "question": "What are your greatest strength and your biggest area for improvement?",
+      "strategy": "Strength: Back with evidence. Weakness: State an authentic weakness along with active steps you are taking to overcome it.",
+      "sampleAnswer": "My strength is disciplined consistency; I solve coding problems daily and have built a strong habit of writing clean, documented code. An area I'm actively improving is balancing perfectionism with delivery speed; I have adopted time-boxing techniques which helped me deliver quality features much faster."
+    },
+    {
+      "id": 4,
+      "category": "HR & Fitment",
+      "question": "Where do you see yourself in the next 3 to 5 years?",
+      "strategy": "Demonstrate ambition, commitment to skill growth, and desire to take on technical ownership.",
+      "sampleAnswer": "In 3 to 5 years, I envision myself as a solid end-to-end software engineer, mastering cloud architecture and taking ownership of key system modules. I also aim to mentor incoming junior developers and contribute meaningfully to architectural decisions."
+    }
+  ],
+  "checklist": [
+    { "id": "chk-1", "task": "Create ATS-compliant Single-page Resume (LaTeX/Overleaf)", "category": "Resume", "done": true },
+    { "id": "chk-2", "task": "Solve Top 50 LeetCode / GeeksforGeeks Curated DSA Problems", "category": "DSA", "done": false },
+    { "id": "chk-3", "task": "Revise ACID Properties & Normalization in DBMS", "category": "Core CS", "done": true },
+    { "id": "chk-4", "task": "Review OS CPU Scheduling & Deadlock Coffman Conditions", "category": "Core CS", "done": false },
+    { "id": "chk-5", "task": "Take 3 Speed Tests in Quantitative Aptitude & Reasoning", "category": "Aptitude", "done": false },
+    { "id": "chk-6", "task": "Deploy at least 2 Full-Stack Projects with Live URLs & GitHub", "category": "Projects", "done": true },
+    { "id": "chk-7", "task": "Prepare STAR Stories for Top 5 HR Behavioral Questions", "category": "HR", "done": false },
+    { "id": "chk-8", "task": "Optimize LinkedIn & GitHub Profiles with Readmes and Badges", "category": "Profile", "done": true }
+  ]
 }

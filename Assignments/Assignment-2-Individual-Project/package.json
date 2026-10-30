@@ -1,0 +1,20 @@
+{
+  "name": "placement-preparation-portal",
+  "version": "1.0.0",
+  "description": "Campus Placement Preparation Portal built with React.js, CSS, and dummy JSON data",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx serve src",
+    "dev": "npx serve src"
+  },
+  "keywords": [
+    "react",
+    "placement-portal",
+    "dsa",
+    "aptitude",
+    "interview-prep",
+    "campus-recruitment"
+  ],
+  "author": "S.Uzaif Ahamed (A24126552178)",
+  "license": "MIT"
+}
