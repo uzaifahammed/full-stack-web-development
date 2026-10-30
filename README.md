@@ -14,7 +14,9 @@ full-stack-web-development/
 │   └── PDFs/
 │
 ├── E-Record/
+│   ├── README.md
 │   └── PDFs/
+│       └── E-Record.pdf
 │
 ├── Assignments/
 │   ├── Assignment-1/
