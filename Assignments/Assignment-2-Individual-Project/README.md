@@ -15,13 +15,19 @@ It equips engineering and computer science students with a structured preparatio
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots (Actual Website Views)
 
 ### 1. Dashboard & Placement Readiness Overview
-![Dashboard Overview](./screenshots/01-dashboard-overview.jpg)
+![Dashboard Overview](./screenshots/01-dashboard-overview.png)
 
-### 2. DSA Practice & Coding Drills with Filters & Solution Viewer
-![DSA Practice](./screenshots/02-dsa-coding-practice.jpg)
+### 2. Target Company Recruitment Tracks
+![Company Tracks](./screenshots/02-company-recruitment-tracks.png)
+
+### 3. DSA Practice & Coding Drills with Filters & Solution Viewer
+![DSA Practice](./screenshots/03-dsa-coding-practice.png)
+
+### 4. Interactive Aptitude & Technical Quiz
+![Aptitude Quiz](./screenshots/04-aptitude-quiz.png)
 
 ---
 
